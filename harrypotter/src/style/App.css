@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+@font-face {
+  font-family: hp;
+  src: url(../fonts/HARRYP__.TTF);
+}
+
+@font-face {
+  font-family: hp2;
+  src: url(../fonts/LumosLatino.ttf);
+}
+
+div.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #222;
+}
+
+header {
+  flex-basis: 40vh;
+  font-family: hp, sans-serif;
+}
+
+
+
+main {
+  display: flex;
+  flex-grow: 1;
+  font-family: 'Caveat', cursive;
+}
+
+aside {
+  flex-basis: 30vw;
+  background-image: url('../img//HY5402.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section {
+  flex-grow: 1;
+  background-color: #333;
+  background-image: url('../img/harry-potter-insygnia-smierci-obraz-wykonany-340742992.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  font-size: .8rem;
+  text-align: right;
+  padding: 1px 1vw;
+
+}
