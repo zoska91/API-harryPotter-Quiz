@@ -29,6 +29,27 @@ class CharachtersInfo extends Component {
 
     }
 
+    componentDidMount() {
+        fetch(url, { key: key })
+            .then(response => {
+                if (response.ok) {
+                    return response
+                }
+                throw Error(response.status)
+            })
+            .then((resp) => resp.json())
+            .then((data) => {
+                this.setState({
+                    characters: data
+                })
+                console.log(this.state.characters)
+            })
+            .catch(function (error) {
+                // Error handling
+                console.log("There's an error with the API.");
+            });
+
+    }
 
 
     handleSearch = e => {
@@ -54,6 +75,8 @@ class CharachtersInfo extends Component {
                     house: ''
                 })
             }
+            console.log(this.state.value)
+            console.log(char.name)
         })
 
 
