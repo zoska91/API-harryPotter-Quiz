@@ -61,9 +61,9 @@ class App extends Component {
               {<Section characters={characters} />}
             </section>,
 
-            <aside>
+            {/* <aside>
               {<Aside />}
-            </aside>
+            </aside> */}
           </main>
 
           <footer>

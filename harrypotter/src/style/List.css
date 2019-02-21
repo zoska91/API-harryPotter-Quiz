@@ -1,0 +1,22 @@
+.listPage {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 3vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listPage ul {
+    list-style: none;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: lighter
+}
+
+.listPage li {
+    margin-bottom: 1vh;
+    letter-spacing: 1px;
+}

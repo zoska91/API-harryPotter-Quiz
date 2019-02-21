@@ -6,17 +6,11 @@
     color: white;
     display: flex;
     flex-direction: column;
-}
-
-
-.title {
     text-align: center;
-    flex-basis: 20%;
 }
 
-.title h2 {
-    text-transform: uppercase
-}
+
+
 
 .search {
     flex-basis: 20%;

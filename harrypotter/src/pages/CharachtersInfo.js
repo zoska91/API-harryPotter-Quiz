@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import '../style/CharachtersInfo.css';
 
 
-
-
 class CharachtersInfo extends Component {
     state = {
         value: '',
@@ -21,15 +19,11 @@ class CharachtersInfo extends Component {
 
     }
 
-
-
-
     handleSearch = e => {
 
         e.preventDefault();
-        console.log(this.props.characters)
-
         const listCharacters = [...this.props.characters]
+        console.log(listCharacters)
 
         listCharacters.forEach(char => {
             if (char.name.toLowerCase() === this.state.value.toLowerCase()) {
@@ -45,14 +39,14 @@ class CharachtersInfo extends Component {
                 this.setState({
                     name: 'not found',
                     role: 'try again!',
-                    house: ''
+                    house: '',
+                    value: ''
                 })
             }
 
         })
-
-
     }
+
     render() {
 
         const { name, house, role } = this.state;

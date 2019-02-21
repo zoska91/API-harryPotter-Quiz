@@ -22,9 +22,9 @@ const Section = (props) => {
 
                 <Route path="/" exact component={Home} />
                 <Route path="/info" exact component={() => <CharachtersInfo characters={characters} />} />
-                <Route path="/findInHouse" exact component={FindInHouse} />
-                <Route path="/house" exact component={GameHouse} />
-                <Route path="/list" exact component={List} />
+                <Route path="/findInHouse" exact component={() => <FindInHouse characters={characters} />} />
+                <Route path="/house" exact component={() => <GameHouse characters={characters} />} />
+                <Route path="/list" exact component={() => <List characters={characters} />} />
 
                 <Route exact component={Error} />
             </Switch>
