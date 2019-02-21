@@ -1,7 +1,7 @@
 import React from 'react';
 
-const GameColourEyes = () => {
+const FindInHouse = () => {
     return (<div> GameColourEyes</div>);
 }
 
-export default GameColourEyes;
+export default FindInHouse;

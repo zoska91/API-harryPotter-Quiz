@@ -43,7 +43,7 @@ class Aside extends Component {
 
         const statistic = this.state.points.map(item => (
 
-            <li key={item.key}>
+            <li key={item.id}>
                 {item.name}: {item.count}
             </li>
         ))

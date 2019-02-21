@@ -8,9 +8,8 @@ const list = [
 
     { name: "start", path: "/", exact: true },
     { name: "information about characters", path: "info" },
-    { name: "Guess the eye color", path: "colorEyes" },
-    { name: "Guess the hair color", path: "colorHair" },
-    { name: "Guess the wood of the wand", path: "wand" },
+    { name: "List of characters", path: "list" },
+    { name: "Find in house", path: "findInHouse" },
     { name: "Guess house", path: "house" },
 
 ]

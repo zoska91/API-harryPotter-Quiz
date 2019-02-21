@@ -36,6 +36,8 @@ main {
   font-family: 'Caveat', cursive;
 }
 
+
+
 aside {
   flex-basis: 30vw;
   background-image: url('../img//HY5402.jpg');
@@ -51,7 +53,9 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
+
 
 footer {
   background-color: #000;
