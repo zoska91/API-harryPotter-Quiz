@@ -8,12 +8,20 @@ import Home from '../pages/Home';
 import Error from '../pages/Error';
 
 
-const Section = () => {
+
+
+const Section = (props) => {
+
+
+    const characters = props.characters
     return (
+
         <>
+
             <Switch>
+
                 <Route path="/" exact component={Home} />
-                <Route path="/info" exact component={CharachtersInfo} />
+                <Route path="/info" exact component={() => <CharachtersInfo characters={characters} />} />
                 <Route path="/findInHouse" exact component={FindInHouse} />
                 <Route path="/house" exact component={GameHouse} />
                 <Route path="/list" exact component={List} />

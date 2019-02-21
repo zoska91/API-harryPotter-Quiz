@@ -2,23 +2,15 @@ import React, { Component } from 'react';
 import '../style/CharachtersInfo.css';
 
 
-const key = '$2a$10$tE9Q/PpSuP7rQLFkrB2IOOcl.0ptM34qLwotYCBjL/p9DIL.o4pMK';
-const url = new URL('https://www.potterapi.com/v1/characters/');
-const params = { key: key, }
-
-// niestety tego nie rozumiem, znalazłam w internecie
-Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
 
 
 class CharachtersInfo extends Component {
     state = {
-        characters: [],
         value: '',
         role: '',
         house: '',
         name: ''
     }
-
 
     handleChange = (e) => {
 
@@ -29,35 +21,15 @@ class CharachtersInfo extends Component {
 
     }
 
-    componentDidMount() {
-        fetch(url, { key: key })
-            .then(response => {
-                if (response.ok) {
-                    return response
-                }
-                throw Error(response.status)
-            })
-            .then((resp) => resp.json())
-            .then((data) => {
-                this.setState({
-                    characters: data
-                })
-                console.log(this.state.characters)
-            })
-            .catch(function (error) {
-                // Error handling
-                console.log("There's an error with the API.");
-            });
 
-    }
 
 
     handleSearch = e => {
 
         e.preventDefault();
-        console.log(this.state.characters)
+        console.log(this.props.characters)
 
-        const listCharacters = [...this.state.characters]
+        const listCharacters = [...this.props.characters]
 
         listCharacters.forEach(char => {
             if (char.name.toLowerCase() === this.state.value.toLowerCase()) {
@@ -68,6 +40,7 @@ class CharachtersInfo extends Component {
                     house: char.house,
                     value: ''
                 })
+
             } else {
                 this.setState({
                     name: 'not found',
@@ -75,8 +48,7 @@ class CharachtersInfo extends Component {
                     house: ''
                 })
             }
-            console.log(this.state.value)
-            console.log(char.name)
+
         })
 
 
@@ -84,6 +56,7 @@ class CharachtersInfo extends Component {
     render() {
 
         const { name, house, role } = this.state;
+
         return (
             <div className='infoPage'>
 
@@ -91,6 +64,8 @@ class CharachtersInfo extends Component {
                     <p>Informations about characters</p>
                     <h2>Find your favorites!</h2>
                 </div>
+
+
                 <form className='search' onSubmit={this.handleSearch}>
                     <label htmlFor="value">
                         Give name:
