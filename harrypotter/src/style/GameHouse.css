@@ -1,0 +1,43 @@
+.gameHousePage {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+    font-size: 1.7rem;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.gameHousePage button {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 1vh 10vw;
+    font-size: 1.7rem;
+    font-family: caveat, sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.gameHousePage button:hover {
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+}
+
+.gameHousePage .result {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    z-index: 10;
+    font-size: 3rem;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10vh 0;
+    width: 80%;
+    border: 5px solid white;
+}

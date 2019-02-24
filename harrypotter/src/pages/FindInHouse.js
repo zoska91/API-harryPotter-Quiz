@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../style/FindInHouse.css'
-import imgG from '../img/g.png'
-import imgH from '../img/h.png'
-import imgR from '../img/r.png'
-import imgS from '../img/s.png'
+import '../style/FindInHouse.css';
+import imgG from '../img/g.png';
+import imgH from '../img/h.png';
+import imgR from '../img/r.png';
+import imgS from '../img/s.png';
 
 class FindInHouse extends Component {
 

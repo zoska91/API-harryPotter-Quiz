@@ -37,15 +37,6 @@ main {
 }
 
 
-
-aside {
-  flex-basis: 30vw;
-  background-image: url('../img//HY5402.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 section {
   flex-grow: 1;
   background-image: url('../img/771px-DHhogwarts.jpg');

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <p>API - Harry Potter by Zofia Janas</p>
+            <p>API from https://www.potterapi.com/ - Side made by Zofia Janas</p>
         </footer>
     );
 }
