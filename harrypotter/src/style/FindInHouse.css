@@ -1,0 +1,60 @@
+.housePage {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 3vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    scrollbar-track-color: red;
+}
+
+.buttons-house {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    height: 20vh;
+    /* background-color: #aaa; */
+}
+
+
+.button-house {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.button-house p {
+    top: 10%;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    font-size: 1.1rem;
+}
+
+.button-house img {
+    top: -15%;
+    left: 10%;
+    position: absolute;
+    height: 20vh;
+}
+
+.button-house:not(:hover) {
+    opacity: .7
+}
+
+.housePage ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 20vh;
+}
+
+.housePage li {
+    flex-basis: 20%;
+    font-size: 1.1rem;
+}

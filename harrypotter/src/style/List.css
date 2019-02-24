@@ -1,12 +1,13 @@
 .listPage {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .6);
     padding: 3vw;
     color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
+    scrollbar-track-color: red;
 }
 
 .listPage ul {
@@ -19,4 +20,10 @@
 .listPage li {
     margin-bottom: 1vh;
     letter-spacing: 1px;
+}
+
+.listPage .answer {
+    overflow-y: scroll;
+    height: 30vh;
+
 }

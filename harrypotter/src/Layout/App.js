@@ -4,7 +4,6 @@ import '../style/App.css';
 import Header from './Header';
 import Section from './Section';
 import Footer from './Footer';
-import Aside from './Aside'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 
@@ -59,11 +58,7 @@ class App extends Component {
           <main>
             <section>
               {<Section characters={characters} />}
-            </section>,
-
-            {/* <aside>
-              {<Aside />}
-            </aside> */}
+            </section>
           </main>
 
           <footer>

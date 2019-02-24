@@ -19,7 +19,7 @@
 div.app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   color: #222;
 }
 
@@ -48,12 +48,12 @@ aside {
 
 section {
   flex-grow: 1;
-  background-color: #333;
-  background-image: url('../img/harry-potter-insygnia-smierci-obraz-wykonany-340742992.jpg');
+  background-image: url('../img/771px-DHhogwarts.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   position: relative;
+  width: 100vw;
 }
 
 

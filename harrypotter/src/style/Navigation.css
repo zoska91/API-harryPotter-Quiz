@@ -23,7 +23,12 @@
     height: 100%;
     padding: 2vh 0;
     font-weight: bold;
-    border-left: 2px solid darkred;
+    border-left: 2px solid #111;
+    transition: .2s;
+}
+
+.nav li:nth-child(1) a {
+    border: none;
 }
 
 .nav a:hover {

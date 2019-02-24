@@ -7,7 +7,8 @@ class CharachtersInfo extends Component {
         value: '',
         role: '',
         house: '',
-        name: ''
+        name: '',
+        message: ''
     }
 
     handleChange = (e) => {
@@ -22,25 +23,34 @@ class CharachtersInfo extends Component {
     handleSearch = e => {
 
         e.preventDefault();
-        const listCharacters = [...this.props.characters]
-        console.log(listCharacters)
+        let listCharacters = [...this.props.characters]
+        const value = this.state.value.toUpperCase();
+
+        listCharacters = listCharacters.map(li => ({
+
+            name: li.name.toUpperCase(),
+            house: li.house,
+            school: li.school,
+            role: li.role,
+            id: li._id
+
+        }))
 
         listCharacters.forEach(char => {
-            if (char.name.toLowerCase() === this.state.value.toLowerCase()) {
+            if (char.name === value) {
 
                 this.setState({
                     name: char.name,
                     role: char.role,
                     house: char.house,
-                    value: ''
+                    // value: ''
                 })
 
             } else {
+                console.log(char.name)
+                console.log(value)
                 this.setState({
-                    name: 'not found',
-                    role: 'try again!',
-                    house: '',
-                    value: ''
+                    message: 'no results... try again!'
                 })
             }
 
@@ -49,7 +59,7 @@ class CharachtersInfo extends Component {
 
     render() {
 
-        const { name, house, role } = this.state;
+        const { message, name, house, role } = this.state;
 
         return (
             <div className='infoPage'>
@@ -74,6 +84,7 @@ class CharachtersInfo extends Component {
                     <h4>{name}</h4>
                     <p>{role}</p>
                     <p>{house}</p>
+                    {name ? null : <p>{message}</p>}
                 </div>
 
             </div>

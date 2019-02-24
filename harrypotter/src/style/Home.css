@@ -1,0 +1,25 @@
+.homePage {
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.title-home {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 3vw;
+}
+
+.title-home h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 6vh;
+}
+
+.title-home p {
+    font-size: 1.4rem;
+    margin-bottom: .5vh;
+}

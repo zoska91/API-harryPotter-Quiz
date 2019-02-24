@@ -20,25 +20,32 @@ class List extends Component {
 
         e.preventDefault();
 
+        let listCharacters = [...this.props.characters];
+        const value = this.state.value.toUpperCase();
 
-        const listCharacters = [...this.props.characters]
-        const value = this.state.value
-        console.log(value)
+        listCharacters = listCharacters.map(li => ({
 
+            name: li.name.toUpperCase(),
+            house: li.house,
+            school: li.school,
+            role: li.role,
+            id: li._id
+
+        }))
+        console.log(listCharacters)
 
         let result = listCharacters.filter(char => char.name.includes(value))
-        console.log(result)
 
         this.setState({
             list: result
         })
-        console.log(this.state.list)
+
     }
 
     render() {
 
         const list = this.state.list.map(li => (
-            <li kay={li._id}>
+            <li key={li.id}>
                 {li.name.toUpperCase()},  {li.house ? `${li.house},` : null} {li.role}, {li.school}
             </li>
         ))
