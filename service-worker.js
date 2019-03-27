@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/API-harryPotter-Quiz/precache-manifest.aad58b757f5a793b73e57c79053a403a.js"
+  "/API-harryPotter-Quiz/precache-manifest.8b116480d3a610e454c656f9e0d59418.js"
 );
 
 workbox.clientsClaim();

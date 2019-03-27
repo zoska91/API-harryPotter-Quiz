@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/API-harryPotter-Quiz/static/media/r.21834425.png"
   },
   {
-    "revision": "804a0db5aa36c83dc403",
+    "revision": "de1f83bfbacb484f26b9",
     "url": "/API-harryPotter-Quiz/static/css/main.0d4c6ed8.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/API-harryPotter-Quiz/static/media/h.f65d90c8.png"
   },
   {
-    "revision": "804a0db5aa36c83dc403",
-    "url": "/API-harryPotter-Quiz/static/js/main.804a0db5.chunk.js"
+    "revision": "de1f83bfbacb484f26b9",
+    "url": "/API-harryPotter-Quiz/static/js/main.de1f83bf.chunk.js"
   },
   {
     "revision": "0e32fd1bbe327682795642083cb53b58",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/API-harryPotter-Quiz/static/media/LumosLatino.80f6d244.ttf"
   },
   {
-    "revision": "1556b9bd402c60675a1acfa668cbfa46",
+    "revision": "61b8699ce0d91bc5ea2a1d0e3946e72f",
     "url": "/API-harryPotter-Quiz/index.html"
   }
 ];
